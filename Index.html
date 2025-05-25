@@ -1,0 +1,120 @@
+<!DOCTYPE html> <!--Tells browser this document type is an HTML5-->
+<html lang="en"> <!--sets the languagew to english-->
+
+<head> <!--head section that stores meta information and link to stylesheet-->
+    <meta charset="UTF-8"> <!--sets character encoding to UTF-8-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Book List</title> <!--sets webpage title to my book list-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css" /> <!--links the css folder to html-->
+    <script src="js/scripts.js"></script> <!--links the js folder to html-->
+</head>
+
+<body>
+    <!--webpage main contents-->
+    <div class="Header-Section">
+        <img src="image/AI.jpg" alt="AI" width="70px" class="AI">
+        <h1>My Book List</h1><!--webpage main heading-->
+    </div>
+
+    <div class="nav-menu" id="navigation"> <!--stores navigation menu-->
+        <a href="index.html" class="active-link">Home</a> <!--link for homepage-->
+        <a href="#">Contact Us</a> <!--placeholder link for contact us page-->
+        <a href="#">About Us</a> <!--placeholder link for about us page-->
+        <a href="javascript:void(0);" class="icon" onclick="nav()"><i class="fa fa-bars"></i></a>
+        <!--Hamburger icon for mobile toogle-->
+    </div>
+
+    <!--dropdown menu for navigation options-->
+    <div class="dropdown">
+        <button onclick="nav()" class="dropbtn">DROPDOWN</button>
+        <div id="myDropdown" class="dropdown-content">
+        </div>
+    </div>
+
+    <div id="Book-List">
+        <!--Book List-->
+        <div class="book">
+            <img src="image/M_L_Cover.jpg" alt="AI and Machine Learning" width="200">
+            <h2>AI and Machine Learning</h2>
+            <p>Author: Laurence Moroney</p>
+            <p>Laurence Moroney's book provides a solid foundation in machine learning, equipping readers with the
+                knowledge needed to implement AI solutions.
+                It covers a variety of topics, including sequence modelling, natural language processing (NLP) and
+                computer vision, that are useful in guiding
+                you through your first model and evaluation.
+                This book is an excellent choice for programmers looking to enhance and expand their skill set in AI and
+                Machine Learning.
+                Unlike many machine learning books that start with complex advanced mathematics, Moroney's book focuses
+                on practical lessons
+                that are much easier to grasp, encapsulate and allows you to work directly with the code. This approach
+                makes it practically
+                accessible for beginners.
+                Laurence Moroney, a renowned author and educator, has written numerous books and taught highly
+                successful AI courses.
+                His expertise ensures that this book is a valuable resource for both beginners and those studying AI and
+                machine learning.
+                It guarantees success in gaining new skills and understanding the practical applications of machine
+                learning.
+            </p>
+            <button type="button" onclick="location.href='pay.html'">pay</button>
+            <!--button to navigate to the payment page-->
+        </div>
+
+        <div class="book">
+            <img src="image/M_L_P_Cover.jpg" alt="Machine Learning + Python" width="200">
+            <h2>Introduction to Machine Learning with Python</h2>
+            <p>Authors: Sarah Guido and Andreas C. Muller</p>
+            <p>Introduction to Machine Learning with Python is a guidebook designed for programmers and data scientists
+                interested in learning how to build machine learning solutions using Python. This highly recommended
+                book not only helps in organizing data but also teaches how machines can be programmed to analyse and
+                learn from disparate data sets, such as creating predictions and forming hypotheses.
+                It provides advanced methods for model evaluation and includes techniques for working with text data.
+                This book is ideal for those interested in better understanding machine learning using the Python
+                programming language and applying it to real-world problems. It offers a clear and practical
+                introduction to the field, making it easier to comprehend even for those without a strong background in
+                mathematics.
+            </p>
+            <button type="button" onclick="location.href='pay.html'">pay</button>
+            <!--button to navigate to the payment page-->
+        </div>
+
+        <div class="book">
+            <img src="image/E_H_Cover.jpg" alt="Hacking" width="208">
+            <h2>Hands on Hacking</h2>
+            <p>Authors: Jennifer Arcuri and Matthew Hickey</p>
+            <p>Hands on Hacking explains the tools, tactics, and procedures used by both ethical hackers and black hat
+                hackers. It covers the techniques hackers use to compromise organizations of various sizes, with a
+                strong emphasis on practical elements of hacking. Written by cybersecurity experts Jennifer Arcuri and
+                Matthew Hickey, who have a proven history of publishing vulnerabilities often overlooked by other
+                professionals, this book highlights security flaws and provides real-world examples.
+                A variety of topics are covered, such as web application vulnerabilities and internal enterprise system
+                hacking. This book is ideal for entry-level professionals seeking to learn ethical hacking techniques,
+                as it focuses on real-world hacking tools used by both ethical and malicious hackers.
+            </p>
+            <button type="button" onclick="location.href='pay.html'">pay</button>
+            <!--button to navigate to the payment page-->
+        </div>
+
+        <div class="book">
+            <img src="image/T_P_P_Cover.jpg" alt="Pragmatic Programmer" width="200">
+            <h2>The Pragmatic Programmer</h2>
+            <p>Authors: Andrew Hunt and David Thomas</p>
+            <p>The Pragmatic Programmer is a highly influential book that offers practical advice and techniques for
+                software developers. It covers a variety of topics, from debugging to career advice and automation,
+                emphasizing the importance of critical thinking and problem-solving. The book provides actionable
+                strategies to tackle real-world challenges in software development.
+                This book is ideal for developers at all levels who are interested in enhancing their programming skills
+                and rediscovering their joy in coding. It teaches you to think like a pragmatic developer, placing great
+                emphasis on efficiency, adaptability, and continuous improvement, making it a comprehensive resource for
+                improving your development practices altogether. Highly recommended in the software development
+                community, many developers and professionals alike consider this book a must read.
+            </p>
+            <button type="button" onclick="location.href='pay.html'">pay</button>
+            <!--button to navigate to the payment page-->
+        </div>
+
+    </div>
+</body>
+
+</html>
