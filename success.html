@@ -1,0 +1,57 @@
+<!DOCTYPE html> <!--Tells browser this document type is an HTML5-->
+<html lang="en"> <!--sets the languagew to english-->
+
+<head> <!--head section that stores meta information and link to stylesheet-->
+    <meta charset="UTF-8"> <!--sets character encoding to UTF-8-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Book List</title> <!--sets webpage title to my book list-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css" /> <!--links the css folder to html-->
+    <script src="js/scripts.js"></script> <!--links the js folder to html-->
+</head>
+
+<body>
+    <!--webpage main contents-->
+    <div class="Header-Section">
+        <img src="image/AI.jpg" alt="AI" width="70px" class="AI">
+        <h1>My Book List</h1><!--webpage main heading-->
+    </div>
+
+    <div class="nav-menu" id="navigation"> <!--stores navigation menu-->
+        <a href="index.html" class="active-link">Home</a> <!--link for homepage-->
+        <a href="#">Contact Us</a> <!--placeholder link for contact us page-->
+        <a href="#">About Us</a> <!--placeholder link for about us page-->
+        <a href="javascript:void(0);" class="icon" onclick="nav()"><i class="fa fa-bars"></i></a>
+        <!--Hamburger icon for mobile toogle-->
+    </div>
+
+    <!--dropdown menu for navigation options-->
+    <div class="dropdown">
+        <button onclick="nav()" class="dropbtn">DROPDOWN</button>
+        <div id="myDropdown" class="dropdown-content">
+        </div>
+    </div>
+    <!--success message heading which comes up in the success webpage-->
+    <div class="success-heading">
+        <h1>You have successfully entered your credit card details</h1>
+    </div>
+    <!--card confirmation section which displays the card type and masked card number-->
+    <div class="MC-Section">
+        <h2>Debit / Credit Card</h2>
+        <!--image representing the card type used-->
+        <img src="image/D.C-Card.jpg" alt="D.C-Card" width="60px" class="MC-Card">
+        <!--placeholder which shows the last for digit of the inputed card number-->
+        <p class="card-success-message"></p>
+    </div>
+
+    <!--final confirmation box, displaying the success icon, a thank you to the user and return button-->
+    <div class="success-box">
+        <img src="image/successful.jpg" alt="success" width="50px" class="success-icon">
+        <!--text message confirmation-->
+        <p class="thank-you-message">successful</p>
+        <!--button to return back to homepage-->
+        <button class="return-button" type="button" onclick="location.href='index.html'">Return to homepage--</button>
+    </div>
+</body>
+
+</html>
