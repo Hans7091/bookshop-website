@@ -1,0 +1,98 @@
+<!DOCTYPE html> <!--Tells browser this document type is an HTML5-->
+<html lang="en"> <!--sets the languagew to english-->
+
+<head> <!--head section that stores meta information and link to stylesheet-->
+    <meta charset="UTF-8"> <!--sets character encoding to UTF-8-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Book List</title> <!--sets webpage title to my book list-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css" /> <!--links the css folder to html-->
+    <script src="js/scripts.js"></script> <!--links the js folder to html-->
+</head>
+
+<body>
+    <!--webpage main contents-->
+    <div class="Header-Section">
+        <img src="image/AI.jpg" alt="AI" width="70px" class="AI">
+        <h1>My Book List</h1><!--webpage main heading-->
+    </div>
+
+    <div class="nav-menu" id="navigation"> <!--stores navigation menu-->
+        <a href="index.html" class="active-link">Home</a> <!--link for homepage-->
+        <a href="#">Contact Us</a> <!--placeholder link for contact us page-->
+        <a href="#">About Us</a> <!--placeholder link for about us page-->
+        <a href="javascript:void(0);" class="icon" onclick="nav()"><i class="fa fa-bars"></i></a>
+        <!--Hamburger icon for mobile toogle-->
+    </div>
+
+    <!--dropdown menu for navigation options-->
+    <div class="dropdown">
+        <button onclick="nav()" class="dropbtn">DROPDOWN</button>
+        <div id="myDropdown" class="dropdown-content">
+        </div>
+    </div>
+    <!--contains the main heading for the payment option page-->
+    <div class="payment-heading">
+        <h1>Payment Options</h1>
+    </div>
+
+    <!--introduces the debit/credit card payment method-->
+    <div class="DC-Section">
+        <h2>Debit / Credit Card</h2>
+        <img src="image/D.C-Cards.jpg" alt="D.C-Cards" width="250px" class="DC-Cards">
+        <!--image shows the accepted debit/credit cards-->
+    </div>
+
+    <!--stores payment form-->
+    <div class="payment-box">
+        <!--collects credit card detail of the user-->
+        <form id="paymentForm">
+            <!--store the input of the card number-->
+            <label for="cardNumber">Card Number</label>
+            <input type="text" id="cardNumber" name="cardNumber" required />
+            <br><br />
+            <!--dropdown for expiry date-->
+            <label for="expMonth">Expiration Date</label>
+            <select id="expMonth" name="expMonth" required>
+                <option value="Month">Month</option>
+                <option value="01">January</option>
+                <option value="02">February</option>
+                <option value="03">March</option>
+                <option value="04">April</option>
+                <option value="05">May</option>
+                <option value="06">June</option>
+                <option value="07">July</option>
+                <option value="08">August</option>
+                <option value="09">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+            </select>
+
+            <select id="expYear" name="expYear" required>
+                <option value="Year">Year</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+                <option value="2031">2031</option>
+                <option value="2032">2032</option>
+                <option value="2033">2033</option>
+                <option value="2034">2034</option>
+            </select>
+            <br><br />
+            <!--stores input of the cvv-->
+            <label for="securityCode">Security Code</label>
+            <input type="text" id="securityCode" name="securityCode" required />
+            <p><small>(3-4 digit code normally on the back of your card)</small></p>
+            <!--submit button-->
+            <br>
+            <button type="submit">Continue</button>
+
+        </form>
+    </div>
+</body>
+
+</html>
